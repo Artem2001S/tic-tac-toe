@@ -46,7 +46,13 @@ class TicTacToe {
     }
 
     isDraw() {
-
+        let nulls = 0;
+        for (let i = 0; i <this.desk.length;i++)
+            for (let j = 0; j < this.desk[i].length; j++){
+                if (this.desk[i][j] == undefined) nulls++; 
+            }
+        if (nulls <= this.length - 3) return true
+        else return false;
     }
 
     getFieldValue(rowIndex, colIndex) {
