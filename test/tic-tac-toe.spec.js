@@ -567,6 +567,7 @@ describe('TicTacToe', () => {
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
         });
     });
+
     describe('#getFieldValue', () => {
         it('should return correct field value', () => {
             let game;
