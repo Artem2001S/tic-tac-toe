@@ -1182,7 +1182,7 @@ describe('TicTacToe', () => {
         });
     });
     describe('#isDraw', () => {
-        it.only('should return false if game is not finished or there is a winner, and true if it is a draw', () => {
+        it('should return false if game is not finished or there is a winner, and true if it is a draw', () => {
             let game;
 
             game = new TicTacToe();
